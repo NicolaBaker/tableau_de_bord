@@ -1,0 +1,115 @@
+.chart {
+  background-color: #F6F4F1;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.1);
+  width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #CCC;
+}
+
+.chartButtons {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 22px;
+  margin-top: -10px;
+}
+
+.chartButtons button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.chartButtons button:hover {
+  background-color: #ddd;
+}
+
+.chartButtons button.active {
+  background-color: #473729;
+  color: white;
+  border-color: #a3876e;
+}
+
+.recharts-wrapper {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: #1A1A1A;
+  font-size: 0.85rem;
+}
+
+.recharts-legend-item text {
+  fill: #1A1A1A;
+  font-weight: bold;
+}
+
+.recharts-tooltip-wrapper {
+  font-size: 0.9rem;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  padding: 0.5rem;
+  color: #1A1A1A;
+}
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.checkbox:hover {
+  border-color: #666;
+  background-color: #f9f9f9;
+}
+
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #666;
+  border-radius: 3px;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
