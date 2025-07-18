@@ -1,11 +1,10 @@
 .chart {
-  background-color: #F6F4F1;
+  background-color: #ffffff;
   padding: 50px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.1);
-  width: 90%;
-  margin: 2rem auto;
-  border: 1px solid #CCC;
+  width: 100%;
+  max-width: 90vw;
+  box-sizing: border-box;
+  margin: 20px 0;
 }
 
 .chartButtons {
@@ -18,52 +17,81 @@
 .chartButtons button {
   background-color: #eee;
   border: 1px solid #ccc;
-  padding: 0.5rem 1rem;
+  padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  color: #333;
+  color: #1A1A1A;
   transition: background-color 0.2s ease;
+}
+.chartTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 13px 0;
+  color: #1A1A1A;
 }
 
 .chartButtons button:hover {
   background-color: #ddd;
 }
 
+.chartButtons button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 18px 10px 18px;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #1A1A1A;
+  margin: 0 10px 10px 0;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chartButtons button:hover {
+  border-color: #888;
+}
+
+.chartButtons button:focus {
+  border-color: #888;
+  outline: none;
+}
+
 .chartButtons button.active {
-  background-color: #473729;
-  color: white;
+  background-color: #97856f;
+  color: #1A1A1A;
   border-color: #a3876e;
 }
 
 .recharts-wrapper {
   background-color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 .recharts-cartesian-axis-tick-value {
   fill: #1A1A1A;
   font-size: 0.85rem;
 }
-
 .recharts-legend-item text {
   fill: #1A1A1A;
   font-weight: bold;
 }
-
 .recharts-tooltip-wrapper {
   font-size: 0.9rem;
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1px solid #CCC;
-  padding: 0.5rem;
+  padding: 6px;
   color: #1A1A1A;
 }
 .checkboxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1rem;
+  gap: 11px;
+  margin-top: 14px;
 }
 
 .checkbox {
@@ -86,30 +114,31 @@
 
 .checkbox input[type="checkbox"] {
   appearance: none;
-  -webkit-appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #666;
-  border-radius: 3px;
+  border: 2px solid #7B5E44;
+  border-radius: 4px;
   margin-right: 8px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
+  background-color: #fff;
+}
+
+.checkbox input[type="checkbox"]:hover {
+  border-color: #5C4534
 }
 
 .checkbox input[type="checkbox"]:checked {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #7B5E44;
+  border-color: #7B5E44;
 }
-
 .checkbox input[type="checkbox"]:checked::after {
-  content: '';
   position: absolute;
   left: 4px;
-  top: 0px;
-  width: 4px;
+  top: 1px;
+  width: 5px;
   height: 9px;
   border: solid white;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
 }

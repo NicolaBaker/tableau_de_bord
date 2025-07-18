@@ -1,39 +1,76 @@
 .container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
+  font-family: 'Wix Madefor Text', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
 .controls {
-  margin-bottom: 20px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
-
-button {
-  margin-right: 10px;
-  padding: 8px 16px;
-  background-color: #004080;
-  color: white;
+.controls button {
+  background-color: #97856f;
+  color: #1a1a1a;
   border: none;
   border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
-button:hover {
-  background-color: #0066cc;
+.controls button:hover {
+  background-color: #c0c0bc;
+}
+
+.aceul {
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  position: relative;
+  color: white;
+  justify-content: space-around;
+}
+
+.textA {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 80%;
+  color: #ffffff;
+  font-size: 2.4vw;
+  text-shadow: rgb(0 0 0 / 100%) 6px 3px 10px;
+}
+.textA h1 {
+  margin-bottom: 20px;
+}
+.textA p {
+  margin-top: 0;
 }
 .filters {
+  box-shadow: rgb(0 0 0 / 100%) 3px 3px 10px;
   display: flex;
+  background-color: #f6f4f1d8;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fafafa;
+  gap: 24px;
+  margin: 20px 0;
+  width: 100%;
+  margin-top: 30px;
+  max-width: 77vw;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-radius: 13px;
+  color: black;
 }
-.custom-select {
+.deroulent {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
+  margin-left: 40px;
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 10px 40px 10px 12px;
@@ -46,50 +83,55 @@ button:hover {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
-  cursor: pointer;
   transition: border-color 0.2s ease-in-out;
 }
 
-.custom-select:focus {
+.deroulent:focus {
   border-color: #888;
   outline: none;
 }
 
 .filters select {
-  margin-top: 0.3rem;
+  margin-top: 7px;
 }
-
+.filters label{
+  font-size: 1.4em;
+  margin-left: 40px;
+}
 .filters div {
   display: flex;
   flex-direction: column;
 }
-
-.checkboxes {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  color: #1a1a1ad5;
+  font-size: 0.9rem;
 }
 
-.styled-table {
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 0.9em;
-  width: 100%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+@media (max-width: 1000px) {
+  .filters {
+    max-width: 87vw;
+  }
+  .aceul {
+    height: 500px;
+    
+  }
+  .textA {
+    font-size: 1.4em;
+  }
 
-.styled-table thead tr {
-  background-color: #004080;
-  color: #ffffff;
-  text-align: left;
 }
+@media (max-width: 700px) {
+  .filters {
+    max-width: 87vw;
+  }
+  .aceul {
+    height: 500px;
+    
+  }
+  .textA {
+    font-size: 1.4em;
+  }
 
-.styled-table th,
-.styled-table td {
-  padding: 12px 15px;
-  border: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
 }
